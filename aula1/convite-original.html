@@ -14,6 +14,13 @@
     border: none;
   }
 
+  .chamada-texto {
+  	padding: 0 20px;
+  	font-size: 15px;
+  	font-family: sans-serif;
+
+  }
+
   img {
     display: block;
   }
@@ -45,6 +52,20 @@
     /*border-bottom: 2px solid #195a0c;*/
     max-width: 133px;
     padding: 20px;
+  }
+
+  @media (max-width: 520px) {
+  	.vantagem {
+  		display: block;
+  		max-width: 90%;
+  		width: 90%;
+  		margin: 0 auto;
+  	}  	
+
+  	.vantagem--espacador {
+  		display: block;
+  		height: 1px;
+  	}
   }
 
   .vantagem hr {
@@ -87,7 +108,7 @@
 </head>
 <body>
 
-  <table border="0" width="90%" cellpadding="0" cellspacing="0" align="center"> 
+  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center"> 
     <tr bgcolor="#000000">
       <td align="center" class="cabecalho-logo">
         <br>
@@ -116,7 +137,7 @@
 
     <tr>
       <td align="center">
-        <span style="font-size: 15px; font-family: sans-serif">
+        <span class="chamada-texto">
           João Vicente convidou você para o banco mais digital que existe na atualidade!
           <br><br>
         </span>
@@ -203,7 +224,7 @@
                 </tr>
               </table>
             </td>
-            <td width="33%">
+            <td width="33%" class="vantagem--espacador">
               &nbsp;
             </td>
             <td width="33%" class="vantagem">
